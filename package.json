@@ -1,0 +1,22 @@
+{
+  "name": "pulse-landing",
+  "version": "1.0.0",
+  "description": "Pulse - landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valerii-Hud/pulse-landing.git"
+  },
+  "keywords": [
+    "landing"
+  ],
+  "author": "valerii hud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valerii-Hud/pulse-landing/issues"
+  },
+  "homepage": "https://github.com/Valerii-Hud/pulse-landing#readme"
+}
