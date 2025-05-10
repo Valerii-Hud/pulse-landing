@@ -1,3 +1,19 @@
+@media screen and (max-width: 1440px) {
+  .advantages {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item {
+      &-title {
+        font-size: 24px;
+      }
+      &-descr {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 768px;
@@ -20,6 +36,20 @@
   .promo {
     background: url('../images/main_bg.png') 30% (center / cover) no-repeat;
   }
+  .advantages {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+    &__item {
+      &-title {
+        font-size: 32px;
+      }
+      &-descr {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -30,6 +60,17 @@
 
   .promo {
     background: url('../images/main_bg.png') 32% (center / cover) no-repeat;
+  }
+  .advantages {
+    &__item {
+      &-title {
+        font-size: 30px;
+      }
+      &-descr {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
   }
 }
 
@@ -46,6 +87,9 @@
 }
 
 @media screen and (max-width: 425px) {
+  .container {
+    padding: 0 10px;
+  }
   .header {
     &__logo {
       width: 100%;
@@ -90,6 +134,17 @@
     }
     &__subtitle {
       font-size: 18px;
+    }
+  }
+  .advantages {
+    &__item {
+      &-title {
+        font-size: 22px;
+      }
+      &-descr {
+        font-size: 18px;
+        line-height: 18px;
+      }
     }
   }
 }
