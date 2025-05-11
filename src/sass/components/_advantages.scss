@@ -1,13 +1,7 @@
 .advantages {
   padding-top: 70px;
   background-color: #f6f6f6;
-  &__title {
-    text-align: center;
-    color: #0d0d0d;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 30px;
-  }
+  padding-bottom: 80px;
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 280px);

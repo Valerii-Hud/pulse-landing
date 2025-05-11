@@ -84,6 +84,25 @@
       width: 100%;
     }
   }
+  .consultation {
+    background: url('../../images/consultation/consultation_bg.png') 60%
+      (center / cover) no-repeat;
+    &__descr {
+      font-size: 16px;
+    }
+  }
+  .form {
+    &_feed {
+      width: 100%;
+      input {
+      }
+    }
+  }
+  .title {
+    &_left {
+      font-size: 28px;
+    }
+  }
 }
 
 @media screen and (max-width: 425px) {
