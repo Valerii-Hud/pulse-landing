@@ -12,6 +12,11 @@
       }
     }
   }
+  .reviews {
+    &__item {
+      grid-template-columns: 200px auto;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -70,6 +75,14 @@
         font-size: 24px;
         line-height: 32px;
       }
+    }
+  }
+  .reviews {
+    &__item {
+      grid-template-columns: 1fr;
+    }
+    &__img {
+      display: none;
     }
   }
 }
