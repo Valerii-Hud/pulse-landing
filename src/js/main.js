@@ -59,10 +59,9 @@ $(document).ready(() => {
   $('.modal__close').on('click', () => {
     $('.overlay, #consultation, #order, #thanks').fadeOut();
   });
-  $('.btn_mini').each((i) => {
-    $(this).on('click', () => {
-      $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
-      $('.overlay, #order').fadeIn();
-    });
+  $('.btn_mini').on('click', function () {
+    const i = $('.btn_mini').index(this);
+    $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+    $('.overlay, #order').fadeIn();
   });
 });
