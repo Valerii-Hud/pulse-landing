@@ -112,6 +112,14 @@
       width: 100%;
     }
   }
+  .overlay {
+    .modal {
+      &__close {
+        right: 20px;
+        top: 20px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -166,6 +174,12 @@
         width: 20px;
         height: 20px;
       }
+    }
+  }
+  .overlay {
+    .modal {
+      height: 100vh;
+      width: 100vw;
     }
   }
 }
