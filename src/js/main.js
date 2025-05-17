@@ -64,4 +64,32 @@ $(document).ready(() => {
     $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
     $('.overlay, #order').fadeIn();
   });
+
+  function validateForms(form) {
+    $(form).validate({
+      rules: {
+        name: {
+          minlength: 2,
+          required: true,
+        },
+        phone: 'required',
+        email: {
+          email: true,
+          required: true,
+        },
+        message: {
+          name: {
+            required: 'Please, enter your name',
+            minlength: jQuery.validator.format('Please, enter {0} symbols'),
+          },
+          email: {
+            email: 'Please, enter correct e-mail',
+          },
+        },
+      },
+    });
+  }
+  validateForms('.form_feed');
+  validateForms('#consultation form');
+  validateForms('#order form');
 });
