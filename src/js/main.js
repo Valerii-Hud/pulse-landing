@@ -92,4 +92,6 @@ $(document).ready(() => {
   validateForms('.form_feed');
   validateForms('#consultation form');
   validateForms('#order form');
+
+  $('input[name=phone]').mask('+99 (999) 999-999');
 });
