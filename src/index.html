@@ -111,13 +111,12 @@
             Just fill out the application form <br />
             and we will call you back within 10 minutes
           </div>
-          <form action="#" class="form_feed">
-            <input name="name" placeholder="Your name" type="text" required />
+          <form action="#" class="form_feed" id="consulation-form">
+            <input name="name" placeholder="Your name" type="text" />
             <input
               name="phone"
               placeholder="Your  phone number"
               type="number"
-              required
             />
             <input name="email" placeholder="Your e-mail" type="email" />
             <button class="btn btn_submit">Submit</button>
@@ -803,13 +802,8 @@
         </div>
 
         <form action="#" class="form_feed form_modal">
-          <input name="name" placeholder="Your name" type="text" required />
-          <input
-            name="phone"
-            placeholder="Your  phone number"
-            type="number"
-            required
-          />
+          <input name="name" placeholder="Your name" type="text" />
+          <input name="phone" placeholder="Your  phone number" type="number" />
           <input name="email" placeholder="Your e-mail" type="email" />
           <button class="btn btn_submit">Submit</button>
         </form>
@@ -820,13 +814,8 @@
         <div class="modal__descr">Lorem</div>
 
         <form action="#" class="form_feed form_modal">
-          <input name="name" placeholder="Your name" type="text" required />
-          <input
-            name="phone"
-            placeholder="Your  phone number"
-            type="number"
-            required
-          />
+          <input name="name" placeholder="Your name" type="text" />
+          <input name="phone" placeholder="Your  phone number" type="number" />
           <input name="email" placeholder="Your e-mail" type="email" />
           <button class="btn btn_submit">Buy</button>
         </form>
@@ -841,6 +830,7 @@
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
