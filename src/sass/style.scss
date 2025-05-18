@@ -1,8 +1,8 @@
 @import 'libs/slick';
 @import 'libs/animate';
+@import 'libs/fonts';
+@import 'libs/normolize';
 
-@import 'base/fonts';
-@import 'base/normolize';
 @import 'base/variables';
 @import 'base/basic';
 @import 'base/mixins';
@@ -11,6 +11,8 @@
 @import 'components/forms';
 @import 'components/titles';
 @import 'components/buttons';
+@import 'components/modals';
+@import 'components/pageup';
 
 @import 'components/header';
 @import 'components/promo';
@@ -20,7 +22,5 @@
 @import 'components/catalog';
 @import 'components/reviews';
 @import 'components/footer';
-@import 'components/modals';
-@import 'components/pageup';
 
 @import 'components/media';

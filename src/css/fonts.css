@@ -1,9 +1,0 @@
-@import 'base/_normolize';
-@import 'base/_fonts';
-@import 'base/_basic';
-@import 'base/_mixins';
-@import 'base/_variables';
-
-* {
-  font-family: 'Museo Sans Cyrl 500', sans-serif;
-}
