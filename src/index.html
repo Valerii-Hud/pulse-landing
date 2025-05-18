@@ -77,7 +77,7 @@
               <img
                 src="icons/advantages/advantages_heart.svg"
                 alt="heart"
-                class="advantages__item-img"
+                class="advantages__item-img advantages__item_pulse"
               />
               <div class="advantages__item-title">We care about health</div>
               <p class="advantages__item-descr">
@@ -703,7 +703,11 @@
         <div class="container">
           <h2 class="title">customer reviews</h2>
           <div class="reviews__wrapper">
-            <div class="reviews__item">
+            <div
+              class="reviews__item wow animate__animated animate__fadeInRight"
+              data-wow-duration="1.5s"
+              data-wow-delay="0.1.5s"
+            >
               <div class="reviews__img">
                 <img src="images/reviews/photo_1.png" alt="customer" />
               </div>
@@ -719,7 +723,11 @@
                 </div>
               </div>
             </div>
-            <div class="reviews__item">
+            <div
+              class="reviews__item wow animate__animated animate__fadeInLeft"
+              data-wow-duration="1.5s"
+              data-wow-delay="0.2s"
+            >
               <div class="reviews__img">
                 <img src="images/reviews/photo_2.png" alt="customer" />
               </div>
@@ -738,7 +746,11 @@
                 </div>
               </div>
             </div>
-            <div class="reviews__item">
+            <div
+              class="reviews__item wow animate__animated animate__fadeInRight"
+              data-wow-duration="1.5s"
+              data-wow-delay="0.3s"
+            >
               <div class="reviews__img">
                 <img src="images/reviews/photo_3.png" alt="customer" />
               </div>
@@ -837,6 +849,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -36,5 +36,12 @@
         text-transform: uppercase;
       }
     }
+    &_pulse {
+      animation: heartbeat 2s ease infinite;
+
+      &:hover {
+        animation: heartbeat_fast 1s ease-out infinite;
+      }
+    }
   }
 }
