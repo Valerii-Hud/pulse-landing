@@ -95,5 +95,30 @@ $(document).ready(() => {
 
   $('input[name=phone]').mask('+99 (999) 999-999');
 
-  $('form');
+  $('form').submit((e) => {
+    e.preventDefault();
+    if (!$(this).valid()) {
+      return;
+    }
+    $.ajax({
+      type: 'POST',
+      url: 'mailer/smart.php',
+      data: $(this).serialize(),
+    }).done(() => {
+      $(this).find('input').val('');
+      $('#consultation, #order').fadeOut();
+      $('.overlay, #thanks').fadeIn('slow');
+
+      $('form').trigger('reset');
+    });
+    return false;
+  });
+
+  $(window).scroll(() => {
+    if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    }
+  });
 });
