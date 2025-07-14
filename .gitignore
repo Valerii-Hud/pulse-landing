@@ -12,9 +12,8 @@
 # vscode
 /.vscode
 
-#mailer
-/src/mailer/smart.php
-**/mailer/
+/dist/mailer/
+/src/mailer/
 
 # misc
 .DS_Store
