@@ -14,6 +14,7 @@
 
 #mailer
 /src/mailer/smart.php
+**/mailer/
 
 # misc
 .DS_Store
